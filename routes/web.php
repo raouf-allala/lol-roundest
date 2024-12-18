@@ -2,6 +2,5 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', \App\Livewire\Vote::class);
+Route::get('/results', \App\Livewire\Results::class);
